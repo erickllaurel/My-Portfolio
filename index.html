@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erick John Laurel - Portfolio</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Portfolio!</h1>
+        <p>I'm Erick John Laurel, a Full Stack Web Developer</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="442000586_435413349286411_82262001867368250_n.jpg" alt="Erick John Laurel" class="profile-photo">
+        <p>I'm passionate about web development and thrive on challenges. My journey began at KODEGO, where I honed my skills in both front-end and back-end technologies.</p>
+        <h3>Skills:</h3>
+        <ul>
+            <li>Front-End: HTML, CSS, JavaScript, React</li>
+            <li>Back-End: Node.js, Express, MongoDB</li>
+            <li>Version Control: Git, GitHub</li>
+            <li>Deployment: Heroku, Netlify</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <div class="project">
+            <h3>Project Name: Your First Bootcamp Project</h3>
+            <p>Description: A brief overview of what the project is about.</p>
+            <p>Technologies Used: HTML, CSS, JavaScript</p>
+            <p><a href="#">https://github.com/erickllaurel/1st-Project-KODEGO-1.git</a></p>
+        </div>
+
+        <div class="project">
+            <h3>Project Name: Your Second Bootcamp Project</h3>
+            <p>Description: A brief overview of the second project.</p>
+            <p>Technologies Used: HTML, CSS, JavaScript, React</p>
+            <p><a href="#">GitHub Repo</a></p>
+        </div>
+
+        <div class="project">
+            <h3>Project Name: FloppyGame-app Project</h3>
+            <p>Description: A brief overview of the third project.</p>
+            <p>Technologies Used: HTML, CSS, Node.js, Express</p>
+            <p><a href="#">https://github.com/erickllaurel/FloppyGame-app.git</a></p>
+        </div>
+
+        <div class="project">
+            <h3>Freelance Project: Spa Business Website</h3>
+            <p>Description: Developed a professional website for a spa business, focusing on user experience and aesthetic design.</p>
+            <p>Technologies Used: HTML, CSS, JavaScript</p>
+            <p><a href="#">https://github.com/erickllaurel/Project-2.git</a></p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-container">
+            <p>I’d love to hear from you! Whether you’re interested in collaborating or just want to chat about web development, feel free to reach out.</p>
+            <ul>
+                <li>Email: <a href="mailto:erickjohnlaurel@example.com">erickllaurel@gmail.com</a></li>
+                <li>GitHub: <a href="#">erickllaurel</a></li>
+            </ul>
+        </div>
+    </section>
+    
+    <script>
+        const contactContainer = document.querySelector('.contact-container');
+    
+        contactContainer.addEventListener('mouseenter', () => {
+            contactContainer.style.transition = 'transform 0.3s ease, box-shadow 0.3s ease';
+            contactContainer.style.transform = 'translateY(-10px)';
+        });
+    
+        contactContainer.addEventListener('mouseleave', () => {
+            contactContainer.style.transform = 'translateY(0)';
+        });
+    </script>
+    
+    
+
+    <footer>
+        <p>&copy; 2024 Erick John Laurel. All rights reserved.</p>
+    </footer>
+</body>
+</html>
